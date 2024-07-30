@@ -28,17 +28,17 @@
             height: auto;
             border-radius: 8px; /* Arrondit les coins de l'image */
         }
-        audio {
-            margin-top: 20px;
-            border: 2px solid black; /* Bordure noire autour du lecteur audio */
-            border-radius: 8px;
-            padding: 5px;
-        }
         .title {
             font-size: 24px;
             font-weight: bold;
-            margin: 10px 0; /* Réduit l'espace autour du titre */
+            margin: 10px 0 20px; /* Espace réduit au-dessus, augmenté en dessous */
             color: #333;
+        }
+        audio {
+            margin-top: 0;
+            border: 2px solid black; /* Bordure noire autour du lecteur audio */
+            border-radius: 8px;
+            padding: 5px;
         }
         a.button {
             display: inline-block;
@@ -60,11 +60,11 @@
     <div class="image-container">
         <img src="Sarangi cover.png" alt="Sarangi">
     </div>
+    <div class="title">Sarangi - Népal</div>
     <audio controls>
         <source src="Sarangi Audio.mp3" type="audio/mpeg">
         Votre navigateur ne supporte pas l'élément audio.
     </audio>
-    <div class="title">Sarangi - Népal</div>
     <a href="https://mesinstrumentsdumonde.fr/" class="button">Accéder au site Instruments du Monde</a>
 </body>
 </html>
