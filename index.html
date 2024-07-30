@@ -6,10 +6,7 @@
     <title>Sarangi - Audio et Image</title>
     <style>
         body {
-            background-image: url('Sarangi cover.png');
-            background-size: contain; /* Ajuste l'image à la taille de l'écran */
-            background-repeat: no-repeat;
-            background-position: center top; /* Positionne l'image en haut de la page */
+            background-color: #f0f0f0; /* Couleur de fond neutre pour contraster avec l'image */
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,47 +15,56 @@
             justify-content: flex-start;
             min-height: 100vh;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             color: #333;
         }
-        audio {
-            margin-top: 20px; /* Ajoute un espace au-dessus du lecteur audio */
-            border: 2px solid black; /* Ajoute une bordure noire autour du lecteur */
-            border-radius: 8px; /* Arrondit les coins */
-            padding: 5px; /* Espace à l'intérieur de la bordure */
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
         }
-        p {
-            max-width: 600px; /* Limite la largeur du texte */
-            margin: 20px; /* Espace autour du texte */
-            background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent pour le texte */
-            padding: 10px;
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+        }
+        audio {
+            margin-top: 20px;
+            border: 2px solid black; /* Bordure noire autour du lecteur audio */
             border-radius: 8px;
+            padding: 5px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333; /* Couleur sombre pour un aspect sérieux */
         }
         a.button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #333; /* Couleur de fond noir */
-            color: #fff; /* Texte blanc */
+            background-color: #f57c00; /* Couleur de fond orange */
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
+            font-weight: bold;
         }
         a.button:hover {
-            background-color: #555; /* Couleur de fond plus claire au survol */
+            background-color: #e65100; /* Couleur de fond plus foncée au survol */
         }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="Sarangi cover.png" alt="Sarangi">
+    </div>
     <audio controls>
         <source src="Sarangi Audio.mp3" type="audio/mpeg">
         Votre navigateur ne supporte pas l'élément audio.
     </audio>
-    <p>
-        Le sarangi est un instrument à cordes traditionnel de l'Inde, connu pour sa riche expressivité
-        et sa capacité à imiter la voix humaine. Joué avec un archet, il est souvent utilisé dans la
-        musique classique et folklorique indienne.
-    </p>
+    <div class="title">Sarangi - Népal</div>
     <a href="https://mesinstrumentsdumonde.fr/" class="button">Accéder au site Instruments du Monde</a>
 </body>
 </html>
