@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio et Image de Fond</title>
+    <title>Sarangi - Audio et Image</title>
     <style>
         body {
-            background-image: url('Sarangi cover.png'); /* Remplacez par le nom de votre image */
-            background-size: cover;
-            background-position: center;
+            background-image: url('Sarangi cover.png');
+            background-size: contain; /* Ajuste l'image à la taille de l'écran */
+            background-repeat: no-repeat;
+            background-position: center top; /* Positionne l'image en haut de la page */
             margin: 0;
-            height: 100vh;
+            padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            color: white;
+            justify-content: flex-start;
+            min-height: 100vh;
             text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
         audio {
-            display: block;
+            margin-top: 20px; /* Ajoute un espace au-dessus du lecteur audio */
+        }
+        p {
+            max-width: 600px; /* Limite la largeur du texte */
+            margin: 20px; /* Espace autour du texte */
+            background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent pour le texte */
+            padding: 10px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>Écoutez ce fichier audio</h1>
     <audio controls>
         <source src="Sarangi Audio.mp3" type="audio/mpeg">
         Votre navigateur ne supporte pas l'élément audio.
     </audio>
+    <p>
+        Le sarangi est un instrument à cordes traditionnel de l'Inde, connu pour sa riche expressivité
+        et sa capacité à imiter la voix humaine. Joué avec un archet, il est souvent utilisé dans la
+        musique classique et folklorique indienne.
+    </p>
 </body>
 </html>
