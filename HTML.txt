@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio et Image de Fond</title>
+    <style>
+        body {
+            background-image: url('Sarangi cover.png'); /* Remplacez par le nom de votre image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        audio {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Écoutez ce fichier audio</h1>
+    <audio controls>
+        <source src="Sarangi Audio.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+</body>
+</html>
