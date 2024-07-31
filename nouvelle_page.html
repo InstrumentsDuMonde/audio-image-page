@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nom de l'Instrument - Audio et Image</title>
+    <title>Sarangi - Audio et Image</title>
     <style>
         body {
-            background-color: #f0f0f0;
+            background-color: #f0f0f0; /* Couleur de fond neutre */
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,9 +24,9 @@
             margin-top: 20px;
         }
         .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+            max-width: 50%; /* Limite la taille de l'image à 50% de la largeur du conteneur */
+            height: auto; /* Maintient le ratio d'aspect de l'image */
+            border-radius: 8px; /* Arrondit les coins de l'image */
         }
         .title {
             font-size: 24px;
@@ -36,7 +36,7 @@
         }
         audio {
             margin-top: 0;
-            border: 2px solid black;
+            border: 2px solid black; /* Bordure noire autour du lecteur audio */
             border-radius: 8px;
             padding: 5px;
         }
@@ -44,7 +44,7 @@
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background-color: #f57c00;
+            background-color: #f57c00; /* Couleur de fond orange */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -52,19 +52,19 @@
             font-weight: bold;
         }
         a.button:hover {
-            background-color: #e65100;
+            background-color: #e65100; /* Couleur de fond plus foncée au survol */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <img src="Double flute Africaine cover.png" alt="Nom de l'Instrument">
+        <img src="Sarangi cover.png" alt="Sarangi">
     </div>
-    <div class="title">Double cloche - Afrique </div>
+    <div class="title">Sarangi - Népal</div>
     <audio controls>
-        <source src="nouveau_audio.mp3" type="audio/mpeg">
+        <source src="Sarangi Audio.mp3" type="audio/mpeg">
         Votre navigateur ne supporte pas l'élément audio.
     </audio>
-    <a href="https://votre_site.fr/" class="button">Accéder au site Instruments du Monde</a>
+    <a href="https://mesinstrumentsdumonde.fr/" class="button">Accéder au site Instruments du Monde</a>
 </body>
-</html
+</html>
