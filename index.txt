@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de l'Instrument - Audio et Image</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0 20px;
+            color: #333;
+        }
+        audio {
+            margin-top: 0;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #f57c00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        a.button:hover {
+            background-color: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Double flute Africaine cover.png" alt="Nom de l'Instrument">
+    </div>
+    <div class="title">Double cloche - Afrique </div>
+    <audio controls>
+        <source src="nouveau_audio.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+    <a href="https://votre_site.fr/" class="button">Accéder au site Instruments du Monde</a>
+</body>
+</html>
